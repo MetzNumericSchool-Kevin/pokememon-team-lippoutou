@@ -12,7 +12,7 @@ PokeMemon Game est un jeu de mémoire où l'objectif est de trouver les pokemons
 ### Récupération de la liste des pokemons
 
 - Avec `fetch`, récupérez la liste des pokemons de manière asynchrone, l'url sera celui de votre liveserver.
-  - `http://localhost:5500/data/pokemon.json`
+  - `/data/pokemon.json`
 - Vous n'êtes pas obligé de commencer par cette étape et si vous le souhaitez travailler sur les autres fonctionnalités en partant d'une donnée locale dans le fichier `main.js` comme :
 
 ```ts
