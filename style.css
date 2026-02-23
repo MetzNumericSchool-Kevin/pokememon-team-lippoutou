@@ -29,6 +29,7 @@
   height: 60%;
   top: 60%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
 #grille_de_jeu {

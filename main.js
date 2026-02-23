@@ -39,9 +39,7 @@ const COL = 4;
 const grille = document.querySelector("#grille_de_jeu");
 console.log(grille)
 
-console.log(grille.querySelectorAll(element => {
-    console.log(element)
-}))
+console.log(grille.querySelector(".box"))
 
 
 function appliqueAGrille(callback) {
@@ -50,12 +48,15 @@ function appliqueAGrille(callback) {
         }
     }
 
-function grilleDeDepart(i) {
-    let tile = grille.querySelector(`:nth-child(${i + 1})`);
-    tile.className("bush")
+function grilleDeDepart() {
+    let tiles = grille.querySelectorAll(`.box`)
+    let bush =  '<img src="./assets/bush.webp" class="bush" />'
+    let pokeball = '<img src="./assets/pokeball.png" class="pokeball" />'
+
 }
 
-appliqueAGrille(grilleDeDepart)
+
+grilleDeDepart()
 
 */
 
