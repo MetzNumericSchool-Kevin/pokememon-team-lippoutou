@@ -28,6 +28,18 @@ console.log(listPokemon)
 
 
 
+function distributePokemon(listPokemon) {
+    const boxes = document.querySelectorAll(".box")
+
+        for (let index = 0; index < listPokemon.length; index++) {
+            const pokemon = listPokemon[index];
+            
+            console.log(boxes[index].querySelector(".pokemon").setAttribute("src", pokemon.sprite))
+        }
+}
+
+distributePokemon(listPokemon)
+
 
 
 /*
