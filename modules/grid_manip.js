@@ -39,4 +39,3 @@ export function insertPokemon(index, sprite) {
     let box = getBox(index)
     box.querySelector(".pokemon").src = sprite
 }
-

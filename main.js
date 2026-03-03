@@ -21,12 +21,6 @@ function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
 
-shuffle(listPokemon)
-
-console.log(listPokemon)
-
-
-
 
 function distributePokemon(listPokemon) {
     const boxes = document.querySelectorAll(".box")
@@ -34,10 +28,26 @@ function distributePokemon(listPokemon) {
         for (let index = 0; index < listPokemon.length; index++) {
             const pokemon = listPokemon[index];
             
-            console.log(boxes[index].querySelector(".pokemon").setAttribute("src", pokemon.sprite))
+            boxes[index].querySelector(".pokemon").setAttribute("src", pokemon.sprite)
         }
 }
 
+
+function setListeners() {
+    const boxes = document.querySelectorAll(".box")
+
+    boxes.forEach(element => {
+        element.addEventListener(() => {
+            if (element.querySelector(".bush")) {
+                
+            }
+        })
+    })
+}
+
+
+
+shuffle(listPokemon)
 distributePokemon(listPokemon)
 
 
